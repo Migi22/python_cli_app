@@ -8,6 +8,10 @@ A menu-driven Python CLI app that includes:
 - ✅ Password Generator
 - ✅ Alarm Clock
 
+## Project Flowchart
+
+You can view the flowchart here: https://www.canva.com/design/DAGtPGkyLjI/KXMDMZ9nzwtJb2Xb5qlfLA/edit?utm_content=DAGtPGkyLjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Getting Started
 
 Run the main program with:
