@@ -31,6 +31,11 @@ def main():
                 run_quiz()
             except Exception as e:
                 print("There is an error occured in Mini Quiz Game:", e)
+        elif choice == "4":
+            try:
+                run_password_generator
+            except Exception as e:
+                print("There is an error occured in Password Generator:", e)
         elif choice == "5":
             try:
                 run_alarm_clock
