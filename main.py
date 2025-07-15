@@ -35,16 +35,16 @@ def main():
                 print("There is an error occured in Mini Quiz Game:", e)
         elif choice == "4":
             try:
-                run_password_generator
+                run_password_generator()
             except Exception as e:
                 print("There is an error occured in Password Generator:", e)
         elif choice == "5":
             try:
-                run_alarm_clock
+                run_alarm_clock()
             except Exception as e:
                 print("There is an error in Alarm Clock:", e)
         elif choice == "6":
-            print("Thanks for using the toolkit!")
+            print("\nThanks for using the toolkit!")
             break
         else:
             print("Invalid choice. Please try again.")
