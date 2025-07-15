@@ -18,6 +18,7 @@ python main.py
 
 ## Project Structure
 
+```bash
 /python_cli_app
 ├── main.py
 ├── todo_list.py
@@ -26,6 +27,7 @@ python main.py
 ├── password_generator.py
 ├── alarm_clock.py
 ├── .gitignore
+```
 
 ## Future Plans
 
