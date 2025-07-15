@@ -17,15 +17,25 @@ def main():
         choice = input("Enter your choice (1-6): ")
 
         if choice == "1":
-            run_todo_list()
+            try:
+                run_todo_list()
+            except Exception as e:
+                print("There is an error occured in To-Do list:", e)
         elif choice == "2":
-            run_unit_converter()
+            try:
+                run_unit_converter()
+            except Exception as e:
+                print("There is an error occured in Unit Converter:", e)
         elif choice == "3":
-            run_quiz()
-        elif choice == "4":
-            run_password_generator()
+            try:
+                run_quiz()
+            except Exception as e:
+                print("There is an error occured in Mini Quiz Game:", e)
         elif choice == "5":
-            run_alarm_clock
+            try:
+                run_alarm_clock
+            except Exception as e:
+                print("There is an error in Alarm Clock:", e)
         elif choice == "6":
             print("Thanks for using the toolkit!")
             break
