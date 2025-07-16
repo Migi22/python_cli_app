@@ -4,3 +4,5 @@ __pycache__/
 
 # Ignore your to-do task storage file
 todo.json
+
+.env

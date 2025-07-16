@@ -3,7 +3,7 @@
 A menu-driven Python CLI app that includes:
 
 - ✅ To-Do List
-- ✅ Unit Converter
+- ✅ Currency Converter (Using API)
 - ✅ Mini Quiz Game
 - ✅ Password Generator
 - ✅ Alarm Clock
@@ -28,6 +28,9 @@ python main.py
 ├── emoji_util.py                    # Shared emoji constants across modules
 ├── .gitignore
 # Modules
+├── currency_converter/
+│   ├── __init__.py                  # Contains run() to launch the currency converter
+│   ├── converter_api.py             # handles the fetching exchange rates
 ├── todo_list/
 │   ├── __init__.py                  # Contains run() to launch the To-Do List
 │   ├── add.py                       # add_task() function
@@ -36,7 +39,6 @@ python main.py
 │   ├── mark_done.py                 # mark_done() function
 │   ├── utils.py                     # load_tasks(), save_task()
 ├── todo.json                        # (Generated) This is your saved task data (excluded from Git)
-├── unit_converter/
 ├── quiz/
 ├── password_generator/
 ├── alarm_clock/
