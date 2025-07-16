@@ -1,4 +1,5 @@
 from .add import add_task
+from .view import view_tasks
 
 
 def run():
@@ -24,16 +25,14 @@ def run():
 
         # Choices and the functions
         if choice == "1":
-            print("add task")
             add_task()
         elif choice == "2":
-            print("view task")
-            #view_task()
+            view_tasks()
         elif choice == "3":
-            print("delete task")
+            print("This is just a placeholder, did you forget to uncomment again? HAHA")
             #delete_task()
         elif choice == "4":
-            print("mark task")
+            print("This is just a placeholder, did you forget to uncomment again? HAHA")
             #mark_task()
         elif choice == "5":
             print("Returning to main menu...")
