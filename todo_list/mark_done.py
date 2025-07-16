@@ -14,7 +14,7 @@ def mark_done():
 
     # Checks if the task is empty
     if not tasks:
-        print(f"\n{emoji_util.NOTE}The task is empty. Nothing to mark as Done")
+        print(f"\n{emoji_util.NOTE}The task is empty. Nothing to mark as Done.")
         return
 
     # Looping and printing the task
