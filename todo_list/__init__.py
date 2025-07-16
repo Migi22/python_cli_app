@@ -1,5 +1,6 @@
 from .add import add_task
 from .view import view_tasks
+from .mark_done import mark_done
 
 
 def run():
@@ -32,8 +33,7 @@ def run():
             print("This is just a placeholder, did you forget to uncomment again? HAHA")
             #delete_task()
         elif choice == "4":
-            print("This is just a placeholder, did you forget to uncomment again? HAHA")
-            #mark_task()
+            mark_done()
         elif choice == "5":
             print("Returning to main menu...")
             break
