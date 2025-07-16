@@ -23,14 +23,23 @@ python main.py
 ## Project Structure
 
 ```bash
-/python_cli_app
-├── main.py
-├── todo_list.py
-├── unit_converter.py
-├── quiz.py
-├── password_generator.py
-├── alarm_clock.py
+/python_cli_app/
+├── main.py                          # Entry point of the CLI
+├── emoji_util.py                    # Shared emoji constants across modules
 ├── .gitignore
+# Modules
+├── todo_list/
+│   ├── __init__.py                  # Contains run() to launch the To-Do List
+│   ├── add.py                       # add_task() function
+│   ├── view.py                      # view_tasks() function
+│   ├── delete.py                    # delete_task() function
+│   ├── mark_done.py                 # mark_done() function
+│   ├── utils.py                     # load_tasks(), save_task()
+├── todo.json                        # (Generated) This is your saved task data (excluded from Git)
+├── unit_converter/
+├── quiz/
+├── password_generator/
+├── alarm_clock/
 ```
 
 ## Future Plans
