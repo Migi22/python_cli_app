@@ -1,5 +1,5 @@
 from todo_list import run as run_todo_list
-from unit_converter import run as run_unit_converter
+from currency_converter import run as run_currency_converter
 from quiz import run as run_quiz
 from password_generator import run as run_password_generator
 from alarm_clock import run as run_alarm_clock
@@ -25,9 +25,9 @@ def main():
                 print("There is an error occured in To-Do list:", e)
         elif choice == "2":
             try:
-                run_unit_converter()
+                run_currency_converter
             except Exception as e:
-                print("There is an error occured in Unit Converter:", e)
+                print("There is an error occured in Currency Converter:", e)
         elif choice == "3":
             try:
                 run_quiz()
