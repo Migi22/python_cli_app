@@ -13,7 +13,7 @@ def delete_task():
 
     # Checks if the task is empty
     if not tasks:
-        print(f"\n{emoji_util.NOTE}The task is empty. Nothing to be remove.")
+        print(f"\n{emoji_util.NOTE}The task list is empty. Nothing to be remove.")
         return
 
     # Looping and printing the task
@@ -24,7 +24,7 @@ def delete_task():
 
     while True:
         try:
-            choice = int(input("\nEnter the number of the task to be remove: "))
+            choice = int(input("\nEnter the number of the task to delete: "))
             if 1 <= choice <= len(tasks):
                 break
             else:
@@ -32,8 +32,13 @@ def delete_task():
         except ValueError:
             print("Invalid input. Please enter a valid number")
 
-    # Remove the task from the list directly
-    preview_task = tasks.pop(choice - 1)
+    # Preview the selected task without removing it yet
+    preview_task = tasks[choice - 1]
+    print(f"\nSelected Task:")
+    print(f"  Name: {preview_task['name']}")
+    print(f"  Description: {preview_task['description']}")
+    print(f"  Time: {preview_task['time']}")
+    print(f"  Status: {'✔️ Done' if preview_task['done'] else '❌ Not done'}")
 
     # Confirmation message
     confirm = input(f"Are you sure you want to delete '{preview_task['name']}'? (y/n): ").lower()
@@ -41,7 +46,10 @@ def delete_task():
         print("Cancelled.")
         return
 
+    # Delete after confirmation
+    del tasks[choice - 1]
+
     # Save updated list
     save_task(tasks)
 
-    print(f'\n{emoji_util.CHECK} Task "{removed_task["name"]}" has been deleted!')
+    print(f'\n{emoji_util.CHECK} Task "{preview_task["name"]}" has been deleted!')
