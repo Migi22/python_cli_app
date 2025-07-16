@@ -1,3 +1,6 @@
 __pycache__/
 
 *.pyc
+
+# Ignore your to-do task storage file
+todo.json
