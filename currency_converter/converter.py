@@ -1,6 +1,7 @@
 '''handles fetching of exchange rates'''
 
 from dotenv import load_dotenv
+from .supported_currencies import currency_list_available
 import os
 import requests
 import emoji_util
@@ -11,6 +12,10 @@ api_key = os.getenv("EXCHANGE_API_KEY")
 def currency_exchange():
     while True:
         print("\n=== Exchange on process ===")
+
+        # Display the currency list
+        currency_list_available()
+
         base_currency = input("Please enter the base currency: ").upper()
         target_currency = input("Please enter the target currency: ").upper()
 
@@ -49,7 +54,7 @@ def currency_exchange():
             print("An error occured.")
 
         # Prompt user to convert another or not
-        is_convert_another = input("Convert another? Y/N ").strip().upper()
+        is_convert_another = input("\nConvert another? Y/N ").strip().upper()
         if is_convert_another != "Y":
             break
 
