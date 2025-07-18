@@ -4,7 +4,7 @@ from .mark_done import mark_done
 
 
 def run():
-    print("Todo List module running...") # placeholder logic for the actual to-do list implementation
+    print("Todo List module running...")
 
     while True:
         print("""
@@ -37,3 +37,5 @@ def run():
         elif choice == "5":
             print("Returning to main menu...")
             break
+        else:
+            print("Invalid choice. Please try again.")
