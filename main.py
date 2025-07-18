@@ -25,7 +25,7 @@ def main():
                 print("There is an error occured in To-Do list:", e)
         elif choice == "2":
             try:
-                run_currency_converter
+                run_currency_converter()
             except Exception as e:
                 print("There is an error occured in Currency Converter:", e)
         elif choice == "3":
