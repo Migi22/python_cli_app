@@ -1,0 +1,124 @@
+[
+  {
+    "question": "Who is the creator of this Python CLI Toolkit?",
+    "choices": ["A. Julis", "B. Marianne", "C. Lance", "D. Jayvee"],
+    "answer": "C"
+  },
+  [
+    {
+      "question": "What does CPU stand for?",
+      "choices": [
+        "A. Central Process Unit",
+        "B. Central Processing Unit",
+        "C. Computer Personal Unit",
+        "D. Central Performance Unit"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is an example of an input device?",
+      "choices": ["A. Monitor", "B. Printer", "C. Keyboard", "D. Speaker"],
+      "answer": "C"
+    },
+    {
+      "question": "What does RAM stand for?",
+      "choices": [
+        "A. Read Access Memory",
+        "B. Random Access Memory",
+        "C. Run Accept Memory",
+        "D. Random Actual Memory"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which programming language is primarily used for web development?",
+      "choices": ["A. Python", "B. C++", "C. JavaScript", "D. Java"],
+      "answer": "C"
+    },
+    {
+      "question": "What does 'OS' stand for in computing?",
+      "choices": [
+        "A. Online Server",
+        "B. Operating System",
+        "C. Optical Storage",
+        "D. Open Software"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is NOT an operating system?",
+      "choices": ["A. Windows", "B. macOS", "C. Linux", "D. Oracle"],
+      "answer": "D"
+    },
+    {
+      "question": "Which company developed the Windows operating system?",
+      "choices": ["A. Apple", "B. Microsoft", "C. Google", "D. IBM"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the brain of the computer?",
+      "choices": ["A. Monitor", "B. RAM", "C. CPU", "D. Hard Drive"],
+      "answer": "C"
+    },
+    {
+      "question": "Which storage device can hold the most data?",
+      "choices": [
+        "A. CD",
+        "B. USB flash drive",
+        "C. SSD",
+        "D. Hard Disk Drive"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What does HTML stand for?",
+      "choices": [
+        "A. Hyper Text Markup Language",
+        "B. High Text Machine Language",
+        "C. Hyperlink Markup Language",
+        "D. Hyper Tool Mark Language"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is used to access the internet?",
+      "choices": [
+        "A. Operating System",
+        "B. Browser",
+        "C. Compiler",
+        "D. Spreadsheet"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is open-source software?",
+      "choices": [
+        "A. Software that is always free",
+        "B. Software with visible source code",
+        "C. Software that runs on Windows only",
+        "D. Software used only in schools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the main function of an operating system?",
+      "choices": [
+        "A. Managing the hardware and software",
+        "B. Browsing the internet",
+        "C. Editing documents",
+        "D. Running antivirus programs"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which component is responsible for displaying images on the screen?",
+      "choices": [
+        "A. Sound Card",
+        "B. Graphics Card",
+        "C. Motherboard",
+        "D. RAM"
+      ],
+      "answer": "B"
+    }
+  ]
+]
