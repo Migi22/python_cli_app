@@ -1,6 +1,6 @@
 from todo_list import run as run_todo_list
 from currency_converter import run as run_currency_converter
-from quiz import run as run_quiz
+from mini_quiz_game import run as run_quiz
 from password_generator import run as run_password_generator
 from alarm_clock import run as run_alarm_clock
 
