@@ -20,6 +20,8 @@ Run the main program with:
 python main.py
 ```
 
+or download the .exe that can be found on release section
+
 ## Project Structure
 
 ```bash
@@ -39,14 +41,18 @@ python main.py
 │   ├── mark_done.py                 # mark_done() function
 │   ├── utils.py                     # load_tasks(), save_task()
 ├── todo.json                        # (Generated) This is your saved task data (excluded from Git)
-├── quiz/
+├── mini_quiz_game/
+│   ├── __init__.py                  # Contains run() to launch the Mini quiz game
+│   ├── questions.json               # contains the set of questions
+│   ├── quiz_game_utils.py           # utilities for the  quiz game like load, display, save of scores
+│   ├── quiz_game.py                 # the quiz_game() function locates here
 ├── password_generator/
-├── alarm_clock/
+│   ├── __init__.py                  # Contains run() to launch the password generator
+│   ├── password_util.json           # contains the utilities used to password generator (eg. generate_password() and custom_password_generator())
+├── alarm_clock/                     # contains the run() for lunching the alarm clock logic
 ```
 
 ## Future Plans
 
 - GUI version (Tkinter or PyQt)
-- Persistent data storage (JSON)
 - Rich CLI interface
-- Export as .exe using PyInstaller
