@@ -1,3 +1,5 @@
+from .quiz_game import quiz_game
+from .quiz_game_utils import quiz_highscores
 
 def run():
     print("\n\nLaunching Mini Quiz Game module...")
@@ -21,7 +23,7 @@ def run():
         
         # Menu choices
         if choice == "1":
-            start_quiz()
+            quiz_game()
         elif choice == "2":
             quiz_highscores()
         elif choice == "3":

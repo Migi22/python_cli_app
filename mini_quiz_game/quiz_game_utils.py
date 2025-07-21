@@ -8,9 +8,32 @@ HIGHSCORE_FILE = "highscores.json"
 # Loads the highscores
 def load_highscores():
     if not os.path.exists(HIGHSCORE_FILE):
-        return{}
+        return {}
+    try:
+        with open(HIGHSCORE_FILE, "r") as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        print("Corrupted highscores.json file. Resetting...")
+        return {}
+
+# Display scores
+def display_highscores():
+    print("\n📈 High Scores:")
+    if not os.path.exists(HIGHSCORE_FILE):
+        print("No high scores yet. Play the quiz to set one!")
+        return
+
     with open(HIGHSCORE_FILE, "r") as file:
-        return json.load(file)
+        scores = json.load(file)
+
+    if not scores:
+        print("No high scores yet. Play the quiz to set one!")
+        return
+
+    # Sort and display
+    sorted_scores = sorted(scores, key=lambda s: s["score"], reverse=True)
+    for i, entry in enumerate(sorted_scores, start=1):
+        print(f" {i}. {entry['name']} - {entry['score']} pts")
 
 # Saves the highscores
 def save_highscores(data):
@@ -18,7 +41,7 @@ def save_highscores(data):
         json.dump(data, file, indent=1)
 
 # load the questions
-def load_questions(filename="questions.json"):
+def load_questions(filename="mini_quiz_game/questions.json"):
     with open(filename, "r", encoding="utf-8") as file:
         return json.load(file)
     

@@ -12,11 +12,10 @@ def quiz_game():
     highscores = load_highscores()
     questions_pool = load_questions()
 
-
     while True: # Loop for prompting the user to do another round of game or no
         while True:  # Loop for entering a user name
             # Prompt the user to enter his name
-            username = input("Please enter your username: ").strip
+            username = input("Please enter your username: ").strip()
 
             # Check if the username variable is empty
             if username == "":
@@ -61,6 +60,10 @@ def quiz_game():
                 break
             else:
                 print("Invalid input. Please select between choices 1 and 2.")
+
+        if len(questions_pool) < num_questions:
+            print(f"Not enough questions in the pool. Only {len(questions_pool)} available.")
+            return  
             
         # Then the system will select random 10 questions in the 15 pool of questions
         selected_questions = random.sample(questions_pool, num_questions)
@@ -70,7 +73,7 @@ def quiz_game():
         
         # Display the questions and its choices
         # The system will record the correct and wrong answers of the user.
-        for i, question_data in enumerate(selected_questions, str=1):
+        for i, question_data in enumerate(selected_questions, start=1):
             print(f"\nQuestion {i}: {question_data['question']}")
 
             #display choices as A, B, C, D
@@ -86,11 +89,9 @@ def quiz_game():
                     break
                 else:
                     print("Invalid input. Please enter A, B, C, or D only.")
-            
-            selected_choice = choices[choice_labels.index(user_input)]
 
             # Check if correct
-            if selected_choice == question_data['answer']:
+            if user_input == question_data['answer']:
                 print(f"{emoji_util.CHECK} Correct!")
                 correct_score += 1
             else:
