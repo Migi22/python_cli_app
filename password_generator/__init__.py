@@ -21,6 +21,7 @@ def run():
         elif choice == "2":
             custom_password_generator()
         elif choice == "3":
+            print("Going back to main menu...")
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
