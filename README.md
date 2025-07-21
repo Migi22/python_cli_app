@@ -10,7 +10,7 @@ A menu-driven Python CLI app that includes:
 
 ## Project Flowchart
 
-You can view the flowchart here: https://www.canva.com/design/DAGtPGkyLjI/KXMDMZ9nzwtJb2Xb5qlfLA/edit?utm_content=DAGtPGkyLjI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+You can view the flowchart here: https://www.canva.com/design/DAGtPGkyLjI/OcvNAURE_qMAAIDFgV3MVQ/view?utm_content=DAGtPGkyLjI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd6e92cc4f3
 
 ## Getting Started
 
